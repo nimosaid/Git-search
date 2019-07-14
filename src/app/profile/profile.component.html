@@ -1,9 +1,9 @@
 <div class="container">
 
-  <!-- Search bar -->
+  <!-- Search part for github username-->
   <div class="row">
     <div class="col-md-12">
-      <form class="well">
+      <form class="form1">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="GitHub Username" [(ngModel)]="username" name="username" (keyup)="searchUser()" style="text-align:center">
 
@@ -12,21 +12,20 @@
     </div>
   </div>
 
-  <!-- End of search bar -->
+  <!-- End of search part for github username -->
 
 <!-- Start of something else -->
   <div *ngIf="user">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"  style="font-size:20px;"style="color:#FEAC92;" ><strong>GitHub Name : {{user.name}} </strong></h3>
+        <h3 class="panel-title"  style="font-size:20px;"style="color:#FEAC92;" ><strong>GitHub Name  {{user.name}} </strong></h3>
       </div>
       <div class="panel-body">
         <div class="row">
-          <div class="col 1">
-            <img class="img-thumbnail" src="{{user.avatar_url}}">
+          <div class="col-md-8 col-sm-8 col-xs-12">
             <a class="btn btn-default btn-block" target="_blank" href="{{user.html_url}}"style="color:#FEAC92;"> View Profile</a>
           </div>
-          <div class="col 2">
+          <div class="col-md-8 col-sm-8 col-xs-12">
             <div class="stats">
               <p style="color:#FEAC92;">{{user.bio}}</p>
 
@@ -69,8 +68,10 @@
   <div class="container" style="padding: right 500px;">
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h3 class="panel-title" style="color:#FEAC92;" style="text-align:center" ><strong>User Repos</strong></h3>
+      <br><br><br>
+      <h3 class="panel-title"  style="text-align:center" style="color:#FEAC92;"><strong>User Repos</strong></h3>
     </div>
+    <br><br>
     <div class="panel-body">
       <div *ngFor="let repo of repos">
         <div class="row">

@@ -5,13 +5,13 @@ import {FormsModule} from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
-import { ReposComponent } from './repos/repos.component';
-import { UserComponent } from './user/user.component';
+// import { ReposComponent } from './repos/repos.component';
+// import { UserComponent } from './user/user.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent
+    ProfileComponent,
     // ReposComponent,
     // UserComponent
   ],
